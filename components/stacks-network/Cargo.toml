@@ -35,7 +35,7 @@ dirs = { version = "4.0.0" }
 clap = { version = "4.4.8", features = ["derive"] }
 serde_yaml = "0.8.23"
 stackslib = { git = "https://github.com/stacks-network/stacks-core.git", branch="feat/clarity-wasm-next", package = "stackslib" }
-chainhook-sdk = { version = "0.12" }
+chainhook-sdk = { version = "0.12.8" }
 
 stacks-rpc-client = { path = "../stacks-rpc-client" }
 clarinet-files = { path = "../clarinet-files", features = ["cli"] }
