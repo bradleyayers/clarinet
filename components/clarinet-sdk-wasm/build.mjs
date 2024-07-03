@@ -2,6 +2,7 @@
 
 import { spawn } from "node:child_process";
 import { readFile, rm, writeFile } from "node:fs/promises";
+import path from "node:path";
 
 /**
  * build
@@ -96,7 +97,10 @@ async function updatePackageName() {
   console.log("✅ Package name updated successfully.");
 }
 
+const initialDir = process.cwd();
+
 try {
+  process.chdir("components/clarinet-sdk-wasm");
   await build();
   console.log("\n✅ Project successfully built.\n🚀 Ready to publish.");
   console.log("Run the following commands to publish");
@@ -107,4 +111,6 @@ try {
 } catch (error) {
   console.error("❌ Error building:", error);
   throw error;
+} finally {
+  // process.chdir(initialDir);
 }

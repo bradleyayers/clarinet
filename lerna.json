@@ -1,0 +1,10 @@
+{
+  "$schema": "node_modules/lerna/schemas/lerna-schema.json",
+  "version": "2.7.0",
+  "packages": [
+    "components/clarinet-sdk-wasm/pkg-node",
+    "components/clarinet-sdk-wasm/pkg-browser",
+    "components/clarinet-sdk/node",
+    "components/clarinet-sdk/browser"
+  ]
+}
