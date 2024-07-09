@@ -17,9 +17,6 @@ members = [
 ]
 default-members = ["components/clarinet-cli"]
 
-# [patch.crates-io]
-# "clarity-vm" = { path = "../stacks-blockchain/clarity" }
-
 [workspace.package]
 version = "2.7.0"
 
